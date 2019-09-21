@@ -1,0 +1,94 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+#include<iostream.h>
+
+main()
+{
+	int yr;
+	char mm[3];
+	clrscr();
+	int start=0;
+
+	int w=1,max=31;
+	cout<<"~~~This is a calendar program, developed by Lakshmikanth Rao~~~";
+	for(;;)
+	{
+	cout<<"\n\nEnter the year:";
+	cin>>yr;
+	cout<<"\nEnter the month (First three characters)\n";
+	cin>>mm;
+	w=1;
+	if(strcmp(mm,"jan")==NULL) { start=2;max=31;}
+		else	if(strcmp(mm,"feb")==NULL)
+	{
+		start=5;
+		if(yr%4==0)
+		max=29;
+		else
+		max=28;
+	}
+	  else	if(strcmp(mm,"mar")==NULL){start=6;max=31;}
+		else if (strcmp(mm,"apr")==NULL){start=2;max=30;}
+	  else	if(strcmp(mm,"may")==NULL){start=4;max=31;}
+	  else	if(strcmp(mm,"jun")==NULL){start=0;max=30;}
+	 else	if	  (strcmp(mm,"jul")==NULL){start=2;max=31;}
+	  else	if(strcmp(mm,"aug")==NULL){start=5;max=31;}
+	  else	if(strcmp(mm,"sep")==NULL){start=1;max=30;}
+	  else	if(strcmp(mm,"oct")==NULL){start=3;max=31;}
+	  else	if(strcmp(mm,"nov")==NULL){start=6;max=30;}
+	  else	if(strcmp(mm,"dec")==NULL){start=1;max=31;}
+
+	int val=yr-1980;
+	int tot=val+(val/4);
+	if(tot<7)
+	tot=start;
+	else
+	 if(yr%4==0 && yr%10!=0)
+	 tot=(tot%7)+start+1;
+	 else
+	 tot=(tot%7)+start;
+	 if(tot>=7)tot=tot%7;
+
+
+	cout<<"SUN  MON  TUE  WED  THU  FRI  SAT\n";
+
+	for(int j=0;j<tot;j++)
+		{
+			cout<<"****|";
+		}
+
+	for(int i=0;i<5;i++)
+		{
+			if(i==0)
+			{
+				for(int j=tot;j<7;j++)
+				{
+					if(w<=max)
+					if(w<=9)
+					{
+						cout<<"  "<<w++;
+						cout<<"| ";
+					}
+					else
+					cout<<" "<<w++<<"| ";
+				}
+			}
+		 else
+		 {
+			for(int j=0;j<7;j++)
+				{
+					if(w<=max)
+					if(w<=9)
+					{
+						cout<<"  "<<w++;
+						cout<<"| ";
+					}
+					else
+					cout<<" "<<w++<<"| ";
+			 }
+		 }
+	cout<<"\n";
+	}
+	}
+	}

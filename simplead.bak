@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+ float sum=0,a;
+ clrscr();
+ while(1)
+ {
+  printf("\nEnter the number and press 1000 to exit\n");
+  scanf("%f",&a);
+  if(a==1000)
+  goto bottom;
+  sum=sum+a;
+  printf("\nSum=%f",sum);
+  }
+  bottom:getch();
+ }

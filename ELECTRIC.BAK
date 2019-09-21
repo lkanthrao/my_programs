@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdio.h>
+
+void main()
+{
+ float units=0,pread=0,cread=0,price=0;
+ clrscr();
+ printf("~~~~~Program to calculate electric bill~~~~~ By Kanth\n");
+ printf("		\nEnter the previous month reading\n");
+ scanf("%f",&pread);
+ printf("		\nEnter the current month reading\n");
+ scanf("%f",&cread);
+ units=cread-pread;
+ printf("		\nNumber of units consumed is %f\n",units);
+ if(units==0)
+ {
+	printf("The minimum amount is 20rs\n");
+	goto bottom;
+   }
+ if(units<=30)
+	{
+		price=units*1.85;
+		printf("		\nThe approximate net amount (excluding tax and arrears) is %f",price);
+		getch();
+		goto bottom;
+	}
+ units=units-30;
+ price=price+(30*1.85);
+ if(units<=70)
+ {
+		price=price+(units*2.90);
+		printf("		\nThe approximate net amount (excluding tax and arrears) is %f",price);
+		getch();
+      goto bottom;
+		}
+ else
+	price=price+(70*2.90);
+	units=units-70;
+	price=price+(units*3.80);
+	printf("		\nThe approximate net amount (excluding tax and arrears) is %f",price);
+	bottom:getch();
+	}
+
+

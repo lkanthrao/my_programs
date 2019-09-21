@@ -1,0 +1,93 @@
+.........................Welcome........................
+
+This Program is Created by Lakshmikanth,Ph No:9035888005
+
+Enter the consumed diesel(liters): 335
+Enter the old balance: 24
+Total diesel: 359
+Enter the new balance: 60
+diesel consumed for this month: 299
+Total km: 2541
+Enter the no of days in this month: 31
+Enter the no of no movements:5
+No of days are: 26
+Perday: 97
+Enter the previous km reading: 37467
+
+
+Enter km: 87
+reading: 37554  Balance: 10
+
+Enter km: 95
+reading: 37649  Balance: 12
+
+Enter km: 109
+reading: 37758  Balance: 0
+
+Enter km: 97
+reading: 37855  Balance: 0
+
+Enter km: 78
+reading: 37933  Balance: 19
+
+Enter km: 121
+reading: 38054  Balance: -5
+
+Enter km: 91
+reading: 38145  Balance: 1
+
+Enter km: 70
+reading: 38215  Balance: 28
+
+Enter km: 88
+reading: 38303  Balance: 37
+
+Enter km: 98
+reading: 38401  Balance: 36
+
+Enter km: 115
+reading: 38516  Balance: 18
+
+Enter km: 79
+reading: 38595  Balance: 36
+
+Enter km: 99
+reading: 38694  Balance: 34
+
+Enter km: 113
+reading: 38807  Balance: 18
+
+Enter km: 86
+reading: 38893  Balance: 29
+
+Enter km: 69
+reading: 38962  Balance: 57
+
+Enter km: 81
+reading: 39043  Balance: 73
+
+Enter km: 148
+reading: 39191  Balance: 22
+
+Enter km: 97
+reading: 39288  Balance: 22
+
+Enter km: 102
+reading: 39390  Balance: 17
+
+Enter km: 118
+reading: 39508  Balance: -4
+
+Enter km: 69
+reading: 39577  Balance: 24
+
+Enter km: 88
+reading: 39665  Balance: 33
+
+Enter km: 154
+reading: 39819  Balance: -24
+
+Enter km: 111
+reading: 39930  Balance: -38
+
+Enter km: 66

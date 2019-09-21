@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+
+main()
+{
+	int yr;
+	cin>>yr;
+	clrscr();
+	int a[5][7],w=1,max=31;
+	int start=0;
+	int val=yr-1998;
+	int vval=val/4;
+	int tot=vval%7;
+	start=tot;
+
+	cout<<"SUN  MON  TUE  WED  THU  FRI  SAT\n";
+
+	for(int i=0;i<tot;i++)
+		{
+			cout<<"***|";
+		}
+
+	for(int i=0;i<5;i++)
+	for(int j=tot;j<7;j++)
+	{
+		if(w!=max)
+		{
+			if(w<=9)
+			{
+				cout<<"  "<<w++;
+				cout<<"| ";
+			}
+			else
+			{
+				cout<<" "<<w++<<"| ";
+			}
+
+		}
+		cout<<"\n";
+	}
+	getch();
+	return 0;
+}
